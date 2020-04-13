@@ -9,7 +9,9 @@ import './App.css';
 
 function App() {
   useEffect(() => {
-    const uppy = Uppy()
+    const uppy = Uppy({
+      debug: true,
+    })
       .use(Dashboard, {
         inline: true,
         target: '#drag-drop-area',
